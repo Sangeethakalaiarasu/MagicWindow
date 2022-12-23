@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Window</title>
+</head>
+<body>
+	<div class="window" id="window"></div>
+	<div class="slab"></div>
+	<div class="btn-div">
+		<button class="btn" id="Dawn">Dawn</button>
+		<button class="btn" id="Day">Day</button>
+		<button class="btn" id="Sunset">Sunset</button>
+		<button class="btn" id="Night">Night</button>
+	</div>
+	<div class="cat"></div>
+	<div class="border"></div>
+	<div class="reflection"></div>
+	<div class="reflection one"></div>
+	<div class="reflection two"></div>
+	<div class="reflection three"></div>
+	<script>
+		let windo = document.getElementById('window');
+		let dawn = document.getElementById('Dawn');
+		let day = document.getElementById('Day');
+		let sunset = document.getElementById('Sunset');
+		let night = document.getElementById('Night');
+		
+		dawn.addEventListener('click',function(){
+			windo.style.backgroundColor ="#718ec4";
+		});
+		day.addEventListener('click',function(){
+			windo.style.backgroundColor ="#87CEEB";
+		});
+		sunset.addEventListener('click',function(){
+			windo.style.backgroundColor ="#FC6A38";
+		});
+		night.addEventListener('click',function(){
+			windo.style.backgroundColor ="#08183A";
+		});
+	</script>
+</body>
+</html>
